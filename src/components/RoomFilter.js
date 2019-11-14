@@ -40,6 +40,7 @@ const RoomsFilter = ({ rooms }) => {
       {item}
     </option>
   ));
+  
   return (
     <section className="filter-container">
       <Title title="search rooms" />
