@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-function Hero({ children, hero }) {
+const Hero = ({ children, hero }) => {
     return (
         <div>
             <header className={hero}>

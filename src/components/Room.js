@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 
 
 export default function Room({ room }) {
-    
+ 
     const {name, slug, images, price } = room
-    console.log(images[0])
+        
     return (
         <article className="rooms">
             <div className="img-container">
@@ -18,6 +18,7 @@ export default function Room({ room }) {
                     <p>per night</p>
                 </div>
                 <Link to={`/rooms/${slug}`} className="btn-primary room-link" >
+                   
                     Features
                 </Link>
             </div>
@@ -29,10 +30,10 @@ export default function Room({ room }) {
 
 Room.propTypes = {
     room : PropTypes.shape({
-        name   : PropTypes.string.isRequired,
-        slug   : PropTypes.string.isRequired,
+        name : PropTypes.string.isRequired,
+        slug : PropTypes.string.isRequired,
         images : PropTypes.arrayOf(PropTypes.string).isRequired,
-        price  : PropTypes.number.isRequired
+        price : PropTypes.number.isRequired
 
 
     })
