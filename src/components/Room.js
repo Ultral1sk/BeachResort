@@ -24,7 +24,7 @@ export default function Room({ room }) {
             </div>
             <p className="room-info">{name}</p>
         </article>
-    )
+    );
 }
 
 
